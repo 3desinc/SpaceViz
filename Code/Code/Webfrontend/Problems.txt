@@ -1,0 +1,24 @@
+Problems that I am encountering
+
+Admin Page:
+
+Code related:
+-Need to connect database in order to create a table of users. 
+
+CSS related:
+-Just need to format everything to make it look better.
+
+User Page:
+
+Code related:
+-
+
+CSS related:
+1.Dropdown menu does not appear right below the hovered navigation tab
+  This connects to:
+   -Other tabs (Navigation tabs)
+2.Still need to format everything to look better
+
+
+NOTES:
+-I can not find the pdf for the help document
