@@ -1,5 +1,4 @@
 Configuring git on windows:
-
    1. download git Bash from gitforwindows.org
    2. navigate to folder where you want to clone the repository
    3. git clone https://3desinc:password@github.com/3desinc/SpaceViz.git
