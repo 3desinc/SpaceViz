@@ -1,3 +1,4 @@
 Canadarm
 
-Main diffuse texture not updated yet
+New diffuse texture added
+Original model by DigitalSpace Corporation (2009) added
