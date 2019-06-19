@@ -3,3 +3,10 @@ download git Bash from gitforwindows.org
 navigate to folder where you want to clone the repository
 
 git clone https://3desinc:password@github.com/3desinc/SpaceViz.git
+
+
+
+Adding a file to a repository [from git bash]:
+   1. Enter command -> git add .
+   2. Enter command -> git commit -m "file_name"
+   3. Enter command -> git push origin master
