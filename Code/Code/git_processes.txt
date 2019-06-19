@@ -1,9 +1,8 @@
-download git Bash from gitforwindows.org
+Configuring git on windows:
 
-navigate to folder where you want to clone the repository
-
-git clone https://3desinc:password@github.com/3desinc/SpaceViz.git
-
+   1. download git Bash from gitforwindows.org
+   2. navigate to folder where you want to clone the repository
+   3. git clone https://3desinc:password@github.com/3desinc/SpaceViz.git
 
 
 Adding a file to a repository [from git bash]:
