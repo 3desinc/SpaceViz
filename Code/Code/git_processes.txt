@@ -1,0 +1,5 @@
+download git Bash from gitforwindows.org
+
+navigate to folder where you want to clone the repository
+
+git clone https://3desinc:password@github.com/3desinc/SpaceViz.git
