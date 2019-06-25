@@ -1,6 +1,6 @@
 Canadarm
 
-New diffuse texture added
-Original model by DigitalSpace Corporation (2009) added
++ New diffuse texture added
++ Original model by DigitalSpace Corporation (2009) added
 
-All models closed
++ Canadarm pieces closed
