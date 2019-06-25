@@ -1,0 +1,139 @@
+@(registerForm : Form[Models.User])
+@import helper._
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Login Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <!--===============================================================================================-->
+        <link rel="icon" type="image/png" href="@routes.Assets.versioned("images/favicon.png")">
+            <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="@routes.Assets.versioned("vendor/bootstrap/css/bootstrap.min.css")">
+            <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="@routes.Assets.versioned("font-awesome-4.7.0/css/font-awesome.css")">
+            <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="@routes.Assets.versioned("vendor/animate/animate.css")">
+            <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="@routes.Assets.versioned("vendor/css-hamburgers/hamburgers.min.css")">
+            <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="@routes.Assets.versioned("vendor/select2/select2.min.css")">
+            <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="@routes.Assets.versioned("stylesheets/main.css")">
+        <link rel="stylesheet" type="text/css" href="@routes.Assets.versioned("stylesheets/util.css")">
+            <!--===============================================================================================-->
+
+
+    </head>
+    <body>
+
+        <div class="limiter">
+            <div class="container-login100">
+                <div class="wrap-login100">
+                    <div class="login100-pic js-tilt" data-tilt>
+                        <img src="@routes.Assets.versioned("images/img-01.png")" alt="IMG">
+                    </div>
+
+                    @helper.form(action = routes.LoginController.authenticateUser()){
+
+                        <span class="login100-form-title">
+                            Member Login
+                        </span>
+
+                        <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ">
+                            @helper.inputText(registerForm("email"),'class -> "input100",'type -> "text", 'required -> "required")
+                            <span class="focus-input100"></span>
+                            <span class="symbol-input100">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                            </span>
+                        </div>
+
+                        <div class="wrap-input100 validate-input" data-validate = "Password is required">
+                            @helper.inputText(registerForm("password"),'class -> "input100", 'type -> "password", 'required -> "required")
+                            <span class="focus-input100"></span>
+                            <span class="symbol-input100">
+                                <i class="fa fa-lock" aria-hidden="true"></i>
+                            </span>
+                        </div>
+
+                        <div class="container-login100-form-btn">
+                            <button class="login100-form-btn" id="submitButton" type="submit">
+                                Login
+                            </button>
+                        </div>
+                    }
+<!--
+                    <form class="login100-form validate-form" id="loginForm" name="loginForm " method="get">
+                         POST will need to be researched in order for implementation
+                        <span class="login100-form-title">
+						Member Login
+                        </span>
+
+                        <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ">
+                            <input class="input100" type="email" id="userEmail" placeholder="Email" autocomplete="on">
+                            <span class="focus-input100"></span>
+                            <span class="symbol-input100">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                            </span>
+                        </div>
+
+                        <div class="wrap-input100 validate-input" data-validate = "Password is required">
+                            <input class="input100" type="password" id="password" placeholder="Password">
+                            <span class="focus-input100"></span>
+                            <span class="symbol-input100">
+                                <i class="fa fa-lock" aria-hidden="true"></i>
+                            </span>
+                        </div>
+
+                        <div class="container-login100-form-btn">
+                            <button class="login100-form-btn" id="submitButton" type="submit">
+                                Login
+                            </button>
+                        </div>
+                    -->
+
+                        <div class="text-center-1 p-t-12">
+                            <span class="txt1">
+							Forgot
+                            </span>
+                            <a class="txt2" href="@routes.LoginController.forgotUser()">
+							Username
+                            </a>
+                        </div>
+
+                        <div class="text-center-2 p-t-12">
+                            <span class="txt1">
+                                Forgot
+                            </span>
+                            <a class="txt2" href="@routes.LoginController.forgotPass()">
+                                Password
+                            </a>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+
+
+            <!--===============================================================================================-->
+        <script src="@routes.Assets.versioned("vendor/jquery/jquery-3.2.1.min.js")"></script>
+            <!--===============================================================================================-->
+        <script src="@routes.Assets.versioned("vendor/jquery/jquery-3.2.1.min.js")"></script>
+            <!--===============================================================================================-->
+        <script src="@routes.Assets.versioned("vendor/bootstrap/js/popper.js")"></script>
+        <script src="@routes.Assets.versioned("vendor/bootstrap/js/bootstrap.min.js")"></script>
+            <!--===============================================================================================-->
+        <script src="@routes.Assets.versioned("vendor/select2/select2.min.js")"></script>
+            <!--===============================================================================================-->
+        <script src="@routes.Assets.versioned("vendor/tilt/tilt.jquery.min.js")"></script>
+        <script >
+		$('.js-tilt').tilt({
+            scale: 1.1
+        })
+	</script>
+            <!--===============================================================================================-->
+        <script src="@routes.Assets.versioned("javascripts/main.js")"></script>
+
+    </body>
+</html>
