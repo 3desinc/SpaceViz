@@ -1,0 +1,191 @@
+/*=======================================================
+[Body] */
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    height: 1000px;
+}
+/*=======================================================
+[Header] */
+.header {
+    width: 100%;
+    height: 200px;
+
+}
+.header-img {
+    height: 100px;
+    width: 500px;
+}
+.img-box {
+    display: inline-block;
+    margin: 30px 0px 20px 500px;
+}
+
+/*=======================================================
+[Above Nav Bar Items] */
+
+.div-header {
+    float: right;
+    margin-bottom: 10px;
+}
+
+.logout-button {
+    display: block;
+    float: right;
+    position: absolute;
+    padding: 5px;
+    margin: 5px;
+    font-size: 14px;
+    width: auto;
+
+}
+/*=======================================================
+[Navigation Bar] */
+
+.container {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
+.div-content-nav-bar {
+    background-color: dodgerblue;
+    padding: 5px 150px 5px 120px;
+    top: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 35px;
+    font-family: Verdana;
+}
+
+.nav-bar-dropdown {
+    display: inline-block;
+    position: relative;
+    float: left;
+    margin: 5px 10px 5px 10px;
+    color: white;
+    font-size: 20px;
+    text-align: justify;
+    height: 35px;
+}
+
+.nav-bar-content {
+    display: none;
+    font-size: 16px;
+    position: absolute;
+    top: 33px;
+    width: 250px;
+    height: 100px;
+    color: lightslategray;
+    background-color: #464646;
+    z-index: 2;
+}
+
+.nav-bar-links {
+    float: left;
+    text-decoration: none;
+    margin: 10px 20px 10px 20px;
+    color: #b3b3b3;
+
+}
+
+.nav-bar-dropdown:hover {
+    border-top: 2px solid lightskyblue;
+    color: lightskyblue;
+}
+
+.nav-bar-dropdown:hover .nav-bar-content {
+    display: block;
+}
+
+.nav-bar-links:hover {
+    cursor: pointer;
+    color: white
+}
+/*=======================================================
+[Content Div] */
+
+.utility-div {
+    display: inline-block;
+    float: right;
+    margin-right: 40px;
+}
+
+.utility-div-buttons {
+    border: none;
+    padding: 5px;
+    text-decoration: none;
+    margin: 5px 10px 5px 10px;
+    color: white;
+    font-size: 20px;
+    text-align: justify;
+    height: 35px;
+}
+
+/*=======================================================
+[Content Div] */
+
+.content-container {
+    width: 1200px;
+    height: 600px;
+    margin: 0 100px 0 100px;
+    padding: 30px;
+    border: 1px solid black;
+}
+
+.content-div {
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    font-family: Verdana;
+}
+
+.thumbnail-dropdown {
+    position: relative;
+    background-color: lightskyblue;
+    border: 2px solid dodgerblue;
+    width: 200px;
+    height: 200px;
+    transition: transform 0.8s;
+    z-index: 1;
+    transform: translateY(10px);
+}
+
+.thumbnail-content {
+    position: relative;
+    border: 2px solid midnightblue;
+    background-color: #464646;
+    height: 50px;
+    width: 200px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 18px;
+    color: ghostwhite;
+    transition: transform 0.7s;
+    transform: translateY(-55px);
+    z-index: -1;
+}
+
+.thumbnail-img {
+    height: 190px;
+    width: 190px;
+    z-index: 1;
+}
+
+.thumbnail-one {
+    height: 250px;
+    width: 250px;
+    margin: 30px;
+}
+
+.thumbnail-dropdown:hover {
+    transform: translateY(-5px);
+}
+
+.thumbnail-dropdown:hover + .thumbnail-content {
+    transform: translateY(-5px);
+
+}
+

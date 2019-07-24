@@ -1,0 +1,72 @@
+@()
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="@routes.Assets.versioned("stylesheets/userPage.css")">
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="img-box">
+            <img class="header-img" src="@routes.Assets.versioned("images/FSU header image.png")" alt="Christa McAuliffe/FSU">
+        </div>
+    </div>
+
+    <!--Navigation Bar-->
+    <div class="container">
+        <div class="div-content-nav-bar">
+            <div>
+                    <div class="nav-bar-dropdown">
+                        <span>Apps</span>
+                        <div class="nav-bar-content">
+                            <a class="nav-bar-links" href="@routes.UserpageController.canadaArmPage()" target="_blank">Canada Arm App</a>
+                            <a class="nav-bar-links" href="#">Blank Link</a>
+                        </div>
+                    </div>
+
+                    <div class="nav-bar-dropdown">
+                        Tools
+                    </div>
+
+                    <div class="nav-bar-dropdown">
+                        Artifacts
+                    </div>
+
+                    <div class="nav-bar-dropdown">
+                        Tutorials
+                            <div class="nav-bar-content">
+                                <a class="nav-bar-links" href="@routes.Assets.versioned("pdf-Files/Tutorial_RobotArm.pdf")">
+                                    Canada Arm Tutorial PDF</a>
+                            </div>
+                    </div>
+
+
+                    <div class="nav-bar-dropdown">
+                        Help
+                    </div>
+
+                <div class="utility-div">
+                    <a class="utility-div-buttons" href="@routes.UserpageController.settingsPage()">Settings</a>
+                    <a class="utility-div-buttons" href="@routes.UserpageController.logoutUser()">Logout</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+<!--Content Div-->
+    <div class="content-container">
+        <div class="content-div">
+            <div class="thumbnail-one">
+                <div class="thumbnail-dropdown">
+                    <a href="@routes.UserpageController.canadaArmPage()">
+                        <img class="thumbnail-img" src="@routes.Assets.versioned("images/img-01.png")" alt="CA"></a>
+                </div>
+                <div class="thumbnail-content">
+                    <p>Canada Arm Model</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
