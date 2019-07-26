@@ -1,0 +1,6 @@
+GLTF Export...................Blender 2.80 GLTF Material files and .glb
+maps..........................Final textures
+ref...........................All references used to create model (images and site links)
+
+root..........................Blender 2.79 model files and textures used while creating UV map for quick access and editing
+
